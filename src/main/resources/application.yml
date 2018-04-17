@@ -1,3 +1,64 @@
 logging:
   level:
     root: INFO
+management:
+  endpoint:
+    info:
+      enabled: true
+    health:
+      enabled: true
+    metrics:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: ["info","health","business","metrics"]
+    enabled-by-default: false
+
+
+
+#management:
+#  endpoints:
+#    enabled-by-default: false
+#    web:
+#      exposure:
+#        include: ["beans","info","env","auditevents","conditions","configprops","flyway",
+#        "health","httptrace","loggers","liquibase","metrics","mappings","scheduledtasks", "sessions", "shutdown", "threaddump"]
+#  endpoint:
+#    beans:
+#      enabled: true
+#    info:
+#      enabled: true
+#    env:
+#      enabled: true
+#    auditevents:
+#      enabled: true
+#    conditions:
+#      enabled: true
+#    configprops:
+#      enabled: true
+#    flyway:
+#      enabled: true
+#    health:
+#      enabled: true
+#    httptrace:
+#      enabled: true
+#    loggers:
+#      enabled: true
+#    liquibase:
+#      enabled: true
+#    metrics:
+#      enabled: true
+#    mappings:
+#      enabled: true
+#    scheduledtasks:
+#      enabled: true
+#    sessions:
+#      enabled: true
+#    shutdown:
+#      enabled: true
+#    threaddump:
+#      enabled: true
+
+
+
